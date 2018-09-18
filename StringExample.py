@@ -35,7 +35,7 @@ letters2 = name[2:]
 print(letters2)#formal way of writing letters
 
 letter2a = name[2:len(name)]
-print(letters2a)
+print(letter2a)
 
 letters3 = name[:2]
 print(letters3)
