@@ -12,5 +12,5 @@ if username == "Username":
 	else: 
 		print("YOU ARE BANNED FROM THIS CASINO")
 		sys.exit() #If the password is wrong the program will end,
-		# but if you get it correct u should be able to play the game
+		# but if you get it correct u should be able to play the game(NO GAME MADE yet)
 
