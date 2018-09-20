@@ -10,12 +10,3 @@ if username == "Username":
 	else: 
 		print("LEAVE THIS COMPUTER ALONE")
 		sys.exit()
-
-
-#Ignore bottom code
-if username == "Jong":
-	if password == ' ':
-		print("Welcome toxic Garen Main")
-	else: 
-		print("NOT TOXIC ENUFF")
-		sys.exit()
