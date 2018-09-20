@@ -1,3 +1,5 @@
+# Made By Jace Kim 9/18/18
+#Modified by 
 username = input("Username: ")
 password = input("Password: ")
 if username == "Jace Kim":
