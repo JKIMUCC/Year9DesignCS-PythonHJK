@@ -8,5 +8,5 @@ if username == "Username":
 	if password == 'Password':
 		print("Password accepted")
 	else: 
-		print("LEAVE THIS COMPUTER ALONE")
+		print("Unauthorized")
 		sys.exit()
