@@ -1,43 +1,42 @@
-#This imports the tkinter "toolbox" this contains
-#all the support material to make GUI elements.
-
+import sys
 import tkinter as tk
-#Pack() is for GUIs with top to bottom elements
-
-root = tk.Tk() #creates the standard main window
-#Tk()is a special function called a COSTRUCTER
 
 
-
-#Widget 1
-#1. Construct the Object
-#2. Configure the Object
-#3. Pack the Object
-
+root = tk.Tk()
 labUN = tk.Label(root, text = "Username")
-#ordered parameters: The order we send them matters
-#named parameters: Javascript and Python Specific
+
 labUN.pack()
 
 entUN = tk.Entry(root)
 entUN.pack(padx = 10, pady = 10)
 
-labPassword = tk.Label(root, text = "Password")
-labPassword.pack()
+labPass = tk.Label(root, text = "Password")
+labPass.pack()
 
-entPassword = tk.Entry(root, show = "*")
-entPassword.pack(padx = 10, pady = 10)
+entPass = tk.Entry(root, show = "*")
+entPass.pack(padx = 10, pady = 10)
 
 
 
-btnLogin = tk.Button(root, text = "Login")
+def login():
+	if entUN == "Username":
+		if entPass == 'Password':
+			output.print("Password accepted")
+			os.system("python3 PaceCalculatorPage.py")
+			sys.exit()
+		else: 
+			output.print("Wrong Username or Password")
+			
+
+
+btnLogin = tk.Button(root, text = "Login", command= login)
 btnLogin.pack()
 
 
 
-
-
-
+output = tk.Text(root, background = "light grey", height = 10, width = 50, font = ("Arial",12))
+output.config(state = "disable")
+output.pack()
 
 
 

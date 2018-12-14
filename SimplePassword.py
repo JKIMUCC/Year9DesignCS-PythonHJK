@@ -2,11 +2,14 @@
 #Modified by 
 import sys
 
+def login
+
+
 username = input("Username: ")
 password = input("Password: ")
 if username == "Username":
 	if password == 'Password':
 		print("Password accepted")
 	else: 
-		print("Unauthorized")
+		print("Wrong Username or Password")
 		sys.exit()
