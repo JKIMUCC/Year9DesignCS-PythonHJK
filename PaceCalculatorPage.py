@@ -45,13 +45,12 @@ class paceCalculator:
 		"100",
 		"200",
 		]
-
 		self.var = tk.StringVar(self.root)
 		self.var.set(OPTIONS[0])
 
 		self.dropDownMenu = tk.OptionMenu(self.root,self.var, OPTIONS[0], OPTIONS[1], OPTIONS[2], OPTIONS[3])
 		self.dropDownMenu.grid(row = 5 , column = 1, sticky = "W")
-
+d
 		self.btnCalc = tk.Button(self.root, text = "Calculate",command= self.calculate)
 		self.btnCalc.grid(row = 6 , column = 0, columnspan = 2)
 		self.output = tk.Text(self.root, height = 10, width=50, relief=tk.GROOVE)
