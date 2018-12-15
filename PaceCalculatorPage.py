@@ -9,9 +9,9 @@ import math
 
 class paceCalculator:
 
-	#def clear_search(event):
+	#**def clear_search(event):
 		#self.entTime.delete(0, END)
-	#def clear_search2(event):
+	#***def clear_search2(event):
 		#self.entDS.delete(0, END)
 
 	def __init__(self):
@@ -33,8 +33,8 @@ class paceCalculator:
 		self.labDS.grid(row = 4, column = 0, padx = 10, pady = 10)
 		self.entDS = tk.Entry(self.root, background = "light grey")
 		self.entDS.grid(row = 4, column = 1, padx = 10, pady = 10)
-		#self.entDS.insert(0,"Enter Distance in Meters")
-		#self.entDS.bind("<Button-1>", clear_search2) 
+		#**self.entDS.insert(0,"Enter Distance in Meters")
+		#***self.entDS.bind("<Button-1>", clear_search2) 
 
 		self.DDLabel = Label(self.root, text = "Select Distance: ")
 		self.DDLabel.grid(row = 5 , column = 0, sticky = "E")
